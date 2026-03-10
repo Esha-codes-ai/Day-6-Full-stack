@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading-id">Heading</h1>
+    <p id="paragraph-id">Paragraph</p>
+    <button id="button-id" type="submit">Submit Button</button>
+    <script>const heading=document.getElementById("heading-id");
+    console.log(heading.innerText);
+    heading.innerText="This is not a heading tag";
+    heading .style.color="brown";
+
+    const button=document.getElementById("button-id");
+    button.addEventListener("click",function(){
+        button.innerText="Please wait...";
+        button.disabled=true;
+    });
+    document.body.style.background="green";
+    localStorage.setItem("name", "xyz");
+    console.log(localstroage.getItem("name"));
+
+
+
+
+    </script>
+</body>
+</html>
